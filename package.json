@@ -19,8 +19,10 @@
   "homepage": "https://github.com/gustavors22/my-pictures-backend#readme",
   "dependencies": {
     "@prisma/client": "^3.8.1",
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.12",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.1",
     "express": "^4.17.2",
     "prisma": "^3.8.1",
