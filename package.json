@@ -1,0 +1,34 @@
+{
+  "name": "my-pictures-backend",
+  "version": "1.0.0",
+  "description": "My pictures is a software to upload your pictures in cloud",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon --exec ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavors22/my-pictures-backend.git"
+  },
+  "author": "Gustavo Reis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavors22/my-pictures-backend/issues"
+  },
+  "homepage": "https://github.com/gustavors22/my-pictures-backend#readme",
+  "dependencies": {
+    "@prisma/client": "^3.8.1",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.12",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "prisma": "^3.8.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0"
+  }
+}
