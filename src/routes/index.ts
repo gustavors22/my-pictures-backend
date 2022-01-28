@@ -1,14 +1,25 @@
 import { Router } from "express";
+
+import authMiddleware from "../app/middlewares/authenticateMiddleware";
+
+import authController from "../app/controllers/authController";
 import userController from "../app/controllers/userController";
 
-export const routes = Router();
 
-routes.get("/", (req, res) => {
+export const router = Router();
+
+router.get("/", (req, res) => {
     res.json({
         message: "Welcome to the API"
     });
 });
 
-routes.post("/user", userController.store);
 
-export default routes;
+router.post('/auth', authController.authenticate);
+
+router.post("/user", userController.store);
+
+router.get("/user", authMiddleware, userController.index);
+
+
+export default router;

@@ -1,4 +1,5 @@
 import express from "express";
+import authMiddleware from "./app/middlewares/authenticateMiddleware";
 import routes from "./routes";
 
 const app = express();
